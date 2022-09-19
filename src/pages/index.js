@@ -13,13 +13,19 @@ import styles from './index.module.css';
 // // Now the registry is available via the CMS object.
 // CMS.registerPreviewTemplate('my-template', MyTemplate)
 
-useEffect(()=>{
-  let script2 = document.createElement('script');
-  script2.type = 'text/javascript';
-  script2.src = 'https://identity.netlify.com/v1/netlify-identity-widget.js';
-  document.getElementById('root').appendChild(script2);
-  },[]
-);
+// useEffect(()=>{
+//   let script2 = document.createElement('script');
+//   script2.type = 'text/javascript';
+//   script2.src = 'https://identity.netlify.com/v1/netlify-identity-widget.js';
+//   document.getElementById('root').appendChild(script2);
+//   },[]
+// );
+// componentDidMount(()=> {
+//   let script = document.createElement('script');
+//   script.type = 'text/javascript';
+//   script.src = 'https://identity.netlify.com/v1/netlify-identity-widget.js';
+//   document.getElementById('append').appendChild(script);
+// });
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
