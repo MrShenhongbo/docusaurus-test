@@ -57,25 +57,25 @@ const config = {
     ],
   ],
   plugins: [
-    [
-      'content-docs',
-      /** @type {import('@docusaurus/plugin-content-docs').Options} */
-      ({
-        id: 'community',
-        path: 'community',
-        routeBasePath: 'community',
-        editUrl: ({locale, versionDocsDirPath, docPath}) => {
-          if (locale !== 'en') {
-            return `https://crowdin.com/project/docusaurus-v2/${locale}`;
-          }
-          return `https://github.com/facebook/docusaurus/edit/main/website/${versionDocsDirPath}/${docPath}`;
-        },
-        editCurrentVersion: true,
-        sidebarPath: require.resolve('./sidebarsCommunity.js'),
-        showLastUpdateAuthor: true,
-        showLastUpdateTime: true,
-      }),
-    ],
+    // [
+    //   'content-docs',
+    //   /** @type {import('@docusaurus/plugin-content-docs').Options} */
+    //   ({
+    //     id: 'community',
+    //     path: 'community',
+    //     routeBasePath: 'community',
+    //     editUrl: ({locale, versionDocsDirPath, docPath}) => {
+    //       if (locale !== 'en') {
+    //         return `https://crowdin.com/project/docusaurus-v2/${locale}`;
+    //       }
+    //       return `https://github.com/facebook/docusaurus/edit/main/website/${versionDocsDirPath}/${docPath}`;
+    //     },
+    //     editCurrentVersion: true,
+    //     sidebarPath: require.resolve('./sidebarsCommunity.js'),
+    //     showLastUpdateAuthor: true,
+    //     showLastUpdateTime: true,
+    //   }),
+    // ],
   ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -94,12 +94,12 @@ const config = {
             label: 'Docs',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            to: '/community/support',
-            label: 'Community',
-            position: 'left',
-            activeBaseRegex: `/community/`,
-          },
+          // {
+          //   to: '/community/support',
+          //   label: 'Community',
+          //   position: 'left',
+          //   activeBaseRegex: `/community/`,
+          // },
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
