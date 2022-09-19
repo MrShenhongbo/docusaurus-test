@@ -7,17 +7,24 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 import styles from './index.module.css';
 
-import CMS from 'netlify-cms-app'
-// Initialize the CMS object
-CMS.init()
-// Now the registry is available via the CMS object.
-CMS.registerPreviewTemplate('my-template', MyTemplate)
+// import CMS from 'netlify-cms-app'
+// // Initialize the CMS object
+// CMS.init()
+// // Now the registry is available via the CMS object.
+// CMS.registerPreviewTemplate('my-template', MyTemplate)
+
+useEffect(()=>{
+  let script2 = document.createElement('script');
+  script2.type = 'text/javascript';
+  script2.src = 'https://identity.netlify.com/v1/netlify-identity-widget.js';
+  document.getElementById('root').appendChild(script2);
+  },[]
+);
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
       <div className="container">
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
