@@ -15,25 +15,25 @@ Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new
 ### 你需要什么
 
 - [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+  - 安装 Node.js 时，建议勾选所有依赖相关的复选框。
 
 ## 生成新站点
 
-Generate a new Docusaurus site using the **classic template**.
+使用 **classic 模板** 生成新的 Docusaurus 站点。
 
-The classic template will automatically be added to your project after you run the command:
+运行命令后，**classic 模板** 将自动添加到您的项目中：
 
 ```bash
 npm init docusaurus@latest my-website classic
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+您可以将此命令键入 Command Prompt、Powershell、Terminal 或代码编辑器的任何其他集成终端。
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+该命令还会安装运行 Docusaurus 所需的所有必要依赖项。
 
 ## 启动您的网站
 
-Run the development server:
+运行开发服务器：
 
 ```bash
 cd my-website
